@@ -1,11 +1,11 @@
 import { useState, useEffect } from "react";
 import { Assets } from "pixi.js";
-import backgroundAsset from "../assets/background.jpg";
-import queenAsset from "../assets/queen.jpg";
-import cardBackAsset from "../assets/cardback.png";
-import aceAsset from "../assets/ace.png";
-import dealerLeftAsset from "../assets/dealer-hand-left.png";
-import dealerRightAsset from "../assets/dealer-hand-right.png";
+import backgroundAsset from "../Assets/background.jpg";
+import queenAsset from "../Assets/queen.jpg";
+import cardBackAsset from "../Assets/cardback.png";
+import aceAsset from "../Assets/ace.png";
+import dealerLeftAsset from "../Assets/dealer-hand-left.png";
+import dealerRightAsset from "../Assets/dealer-hand-right.png";
 
 const ASSETS = [
     backgroundAsset,
