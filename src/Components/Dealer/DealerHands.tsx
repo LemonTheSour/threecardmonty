@@ -57,7 +57,7 @@ export const DealerHands = ({
             <pixiSprite
                 ref={queenRef}
                 texture={queenTexture}
-                x={canvasWidth / 2 - 100}
+                x={HAND_WIDTH * 2 + 90}
                 y={-200}
                 width={300}
                 height={420}
