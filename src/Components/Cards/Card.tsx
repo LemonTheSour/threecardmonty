@@ -1,8 +1,8 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import { Assets, Container, Sprite } from "pixi.js";
-import cardBackAsset from "../../assets/cardback.png";
-import queenAsset from "../../assets/queen.jpg";
-import aceAsset from "../../assets/ace.png";
+import cardBackAsset from "../../Assets/cardback.png";
+import queenAsset from "../../Assets/queen.jpg";
+import aceAsset from "../../Assets/ace.png";
 import type { CardType } from "../../Types/common";
 import { flipCard } from "../../Helpers/common";
 

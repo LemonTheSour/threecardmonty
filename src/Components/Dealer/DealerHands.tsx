@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useRef } from "react";
 import { Assets, Sprite } from "pixi.js";
-import dealerLeftAsset from "../../assets/dealer-hand-left.png";
-import dealerRightAsset from "../../assets/dealer-hand-right.png";
+import dealerLeftAsset from "../../Assets/dealer-hand-left.png";
+import dealerRightAsset from "../../Assets/dealer-hand-right.png";
 import queenAsset from "../../Assets/queen.jpg";
 import { useCardGameContext } from "../Contexts/CardGameContext";
 import gsap from "gsap";
