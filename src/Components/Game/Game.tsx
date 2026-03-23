@@ -4,10 +4,9 @@ import { MainContainer } from "../MainContainer/MainContainer.tsx";
 
 interface GameProps {
     gameStarted: boolean;
-    dialogueComplete: boolean;
 }
 
-export const Game = ({ gameStarted, dialogueComplete }: GameProps) => {
+export const Game = ({ gameStarted }: GameProps) => {
     const [canvasSize, setCanvasSize] = useState(calculateCanvasSize);
 
     const updateCanvasSize = useCallback(() => {
@@ -19,11 +18,5 @@ export const Game = ({ gameStarted, dialogueComplete }: GameProps) => {
         return () => window.removeEventListener("resize", updateCanvasSize);
     }, [updateCanvasSize]);
 
-    return (
-        <MainContainer
-            canvasSize={canvasSize}
-            gameStarted={gameStarted}
-            dialogueComplete={dialogueComplete}
-        />
-    );
+    return <MainContainer canvasSize={canvasSize} gameStarted={gameStarted} />;
 };
