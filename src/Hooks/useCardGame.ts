@@ -14,7 +14,7 @@ import aceAsset from "../Assets/ace.png";
 
 export const useCardGame = () => {
     const [canClick, setCanClick] = useState(false);
-    const [cardTypes] = useState<CardType[]>(() => assignCards());
+    const [cardTypes, setCardTypes] = useState<CardType[]>(() => assignCards());
     const { triggerDialogue } = useDialogue();
     const aceTexture = useMemo(() => Assets.get(aceAsset), []);
     const [bossWon, setBossWon] = useState(false);
@@ -230,6 +230,7 @@ export const useCardGame = () => {
 
     const playBossRound = useCallback(async (): Promise<boolean> => {
         isBossRoundRef.current = true;
+        setCardTypes(["ace", "ace", "ace"]);
         await new Promise((resolve) => gsap.delayedCall(2, resolve));
         triggerDialogue("bossIntro");
         await resetCards();
